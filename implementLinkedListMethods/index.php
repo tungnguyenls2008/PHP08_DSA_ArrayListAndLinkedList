@@ -20,6 +20,7 @@ echo 'Is value "fifth" contained anywhere? '.$linkedList->isContain('fifth').'<b
 $linkedList->removeFields('first');
 echo 'Linked list after removed value "first": '.$linkedList.'<br>';
 echo "Linked list's size: ".$linkedList->getSize().'<br>';
-$clonedList=$linkedList->cloneList($linkedList);
+$clonedList=$linkedList->cloneList();
 echo "cloned list: ".$clonedList.'<br>';
-
+$reversedList=$linkedList->reverseList();
+echo 'reversed list: '.$reversedList;
